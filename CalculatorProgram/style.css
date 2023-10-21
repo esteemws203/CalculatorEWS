@@ -1,0 +1,120 @@
+:root {
+    --blur-filter: blur(5.5px);
+    --backdrop-filter: rgba(255, 255, 255, 0.75);
+    --border-style: 1px solid rgba(255, 255, 255, 0.01);
+    --border-radius: 16px;
+    --box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    --color: #232323;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(320deg, #ceabbd,#3ccd1f, #a7bb22);
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    backdrop-filter: var(--blur-filter);
+    -webkit-backdrop-filter: var(--blur-filter);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    color: var(--color);
+    background: rgba(255, 255, 255, 0.30);
+    border: var(--border-style);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+.screen {
+    backdrop-filter: var(--blur-filter);
+    -webkit-backdrop-filter: var(--blur-filter);
+    background-color: azure;
+    border-radius: var(--border-radius); 
+    box-shadow: var(--box-shadow);
+    color: var(--color);
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+}
+
+.calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button,
+.calc-button:last-child {
+   backdrop-filter: var(--blur-filter);
+   -webkit-backdrop-filter: var(--blur-filter);
+   background-color: #ccdc6e;
+   border : var(--border-style);
+   border-radius : var(--border-radius);
+   box-shadow : var(--box-shadow);
+   flex-basis :20%;
+   font-family : inherit;
+   font-size :24px ;
+   height :65px ;
+}
+
+.calc-button:last-child {
+   color :var(--color) ;
+   background-color :aqua ;
+}
+
+.calc-button:last-child:hover,
+.calc-button:hover {
+   background-color : inherit ;
+   color : inherit ;
+}
+
+.calc-button:last-child:focus,
+.calc-button:focus {
+   outline : none ;
+}
+
+.calc-button:last-child:hover,
+.calc-button:hover {
+   cursor : pointer ;
+}
+
+.calc-button:last-child:active {
+    background-color: #ddc722;
+    
+}
+
+.calc-button:active {
+    background-color: #ffef78;
+}
+
+.double {
+    flex-basis: 47%;
+    background-color: rgb(83, 222, 240);
+}
+
+.del {
+    background-color: rgb(83, 222, 240);
+}
+
+.triple {
+    flex-basis: 73%;
+}
