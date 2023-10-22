@@ -75,3 +75,43 @@ class Calculator {
 }
 
 new Calculator();
+
+
+// let buffer = '0';
+// let previousOperator = '';
+// let runningTotal = '0';
+// let screen = document.querySelector('.screen');
+// function init() {
+//     let value = document.querySelector('.calc-buttons');
+//     value.addEventListener('click', function (event) {
+//         buttonClicked(event.target.innerText);
+//     });
+// }
+
+// function buttonClicked(value) {
+//     isNaN(value) ? handleSymbol(value) : handleNumber(value);
+//     screen.innerText = buffer;
+// }
+
+// function handleSymbol(symbol) {
+//     switch (symbol) {
+//         case 'C': 
+//             buffer = '0';
+//             runningTotal = '0';
+//             break;
+//         case '←':
+            
+//             break;
+//         case '=':
+//             break;
+//         default:
+//             handleMath(symbol);
+//     }
+// }
+
+// function handleNumber(numberString) {
+//     buffer = buffer.length === 0 ? numberString : buffer + numberString;
+// }
+
+// init();
+
